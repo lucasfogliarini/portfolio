@@ -41,7 +41,7 @@ export function useTechEvents() {
 export function Events() {
   const { events, loading, error } = useTechEvents();
 
-  if (loading) return <div>Carregando ...</div>;
+  if (loading) return <div>Carregando encontros de tecnologia ...</div>;
   if (error) return <div>Error: {error.message}</div>;
 
   return (
