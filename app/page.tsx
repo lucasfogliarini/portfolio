@@ -1,4 +1,6 @@
+'use client'
 import { BlogPosts } from 'app/components/posts'
+import { Events } from './events/events'
 
 export default function Page() {
   return (
@@ -32,7 +34,7 @@ Message Brokers:
  - Apache Kafka`}
       </p>
       <div className="my-8">
-        <BlogPosts />
+        <Events />
       </div>
     </section>
   )
