@@ -1,8 +1,9 @@
+'use client'
+
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { Event } from './event';
 
-// Hook personalizado para buscar eventos
 function useEvents(query: string) : { events: Event[] | null, loading: boolean, error: Error | null } {
   const [events, setEvents] = useState(null);
   const [loading, setLoading] = useState(true);

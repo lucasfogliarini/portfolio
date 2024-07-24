@@ -1,4 +1,5 @@
 'use client'
+
 import { Events } from 'app/events/events'
 
 export default function Page() {
