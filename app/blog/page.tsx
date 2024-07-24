@@ -1,4 +1,3 @@
-import { BlogPosts } from 'app/components/posts'
 import { Events } from 'app/events/events'
 
 export const metadata = {

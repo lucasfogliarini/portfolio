@@ -2,7 +2,6 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { Event } from './event';
 
-
 // Hook personalizado para buscar eventos
 function useEvents(query: string) : { events: Event[] | null, loading: boolean, error: Error | null } {
   const [events, setEvents] = useState(null);
@@ -48,9 +47,10 @@ export function Events() {
     <div>
       {events && events.slice(0,10).map((event) => (
         <Link
-          key={event.googleEventUrl}
+          key={event.id}
           className="flex flex-col space-y-1 mb-4"
-          href={`/events/${event.id}`}
+          target='_blank'
+          href={`${event.googleEventUrl}`}
         >
           <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
             <p className="text-neutral-600 dark:text-neutral-400 w-[100px] tabular-nums">

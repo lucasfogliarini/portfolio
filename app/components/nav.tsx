@@ -2,16 +2,16 @@ import Link from 'next/link'
 
 const navItems = {
   '/': {
-    name: 'home',
+    name: 'Sobre',
   },
-  '/encontros': {
-    name: 'encontros',
+  '/events': {
+    name: 'Encontros',
   },
   'https://github.com/lucasfogliarini': {
-    name: 'github',
+    name: 'Github',
   },
   'https://github.com/lucasfogliarini/portfolio': {
-    name: 'código',
+    name: 'Código',
   }
 }
 
