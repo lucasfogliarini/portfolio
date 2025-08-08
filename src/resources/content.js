@@ -17,7 +17,7 @@ const person = {
 
 const newsletter = {
   display: false,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Assine a Newsletter</>,
   description: (
     <>
       I occasionally write about design, technology, and share thoughts on the intersection of
@@ -133,7 +133,9 @@ Foco em impulsionar inovação, excelência técnica e eficiência operacional, 
         timeframe: "2008 - 2024",
         role: "Arquiteto e Engenheiro de Software",
         achievements: [
-          <a target="_blank" href="https://www.linkedin.com/in/lucasfogliarini/#experience">Experiência profissional no LinkedIn</a>
+          <>
+            <a target="_blank" href="https://www.linkedin.com/in/lucasfogliarini/#experience">Experiência profissional no LinkedIn</a>
+          </>
         ],
         images: []
       }
