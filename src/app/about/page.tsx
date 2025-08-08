@@ -129,7 +129,7 @@ export default function About() {
                 vertical="center"
               >
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Flex paddingX="8">Schedule a call</Flex>
+                <Flex paddingX="8">Agende uma conversa</Flex>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"

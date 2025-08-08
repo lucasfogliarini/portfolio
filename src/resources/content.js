@@ -1,20 +1,22 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Lucas",
+  lastName: "Fogliarini",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Arquiteto e Engenheiro de Software",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "lucasfogliarini@gmail.com",
+  locationTimeZone: "America/Sao_Paulo",// Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "Porto Alegre - RS",
+  header: "Lucas Fogliarini",
+  languages: ["Português", "Inglês"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -30,17 +32,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/lucasfogliarini",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/lucasfogliarini",
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "",
   },
   {
     name: "Email",
@@ -54,26 +56,25 @@ const home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `Portfólio apresentando meu trabalho como ${person.role}`,
+  headline: <>Conectando negócios e tecnologia com código de qualidade</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Projeto atual: <strong className="ml-4">Bora Encontros</strong></>,
+    href: "/work/bora-encontros",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Eu sou o Lucas, Arquiteto e Engenheiro de Software atuando profissionalmente na Bem Promotora, especializado em criar soluções escaláveis, arquiteturas robustas e experiências digitais de alto impacto.
     </>
   ),
 };
 
 const about = {
   path: "/about",
-  label: "About",
-  title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  label: "Sobre",
+  title: `Sobre – ${person.name}`,
+  description: `Encontre ${person.name}, ${person.role} de ${person.location}`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -83,122 +84,127 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://wa.me/51992364249?text=Bora?!",
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Introdução",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Olá! Sou Lucas Fogliarini, atualmente trabalho como Arquiteto e Engenheiro de Software, com mais de 15 anos de experiência em tecnologia.
+        <br /><br />
+        Ao longo da minha trajetória, atuei em projetos desafiadores e de alto impacto, assumindo funções como Engenheiro, Líder Técnico e atualmente como Arquiteto de Software. Essa vivência me proporcionou uma visão sólida e prática sobre desenvolvimento de sistemas escaláveis, arquitetura moderna e entrega de soluções com qualidade e valor real para o negócio.
+        <br /><br />
+        Já contribui com iniciativas estratégicas, táticas e operacionais em empresas como Bem Promotora (empréstimo consignado), Dell Digital Finance, Cogna PTC, PrismaGD, Argo Protector, Warren, entre outras. Cada projeto ampliou minha bagagem técnica e minha capacidade de atuar em contextos complexos e colaborativos.
+        <br /><br />
+        Sou movido por desafios, apaixonado por tecnologia e entusiasta do compartilhamento de conhecimento. Você pode acompanhar meus projetos, detalhes das minhas competências e iniciativas no meu GitHub
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Experiência profissional",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Bem Promotora",
+        timeframe: "2024 - Presente",
+        role: "Engenheiro de Software",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Responsável por promover o desenvolvimento eficiente de software na Bem Promotora por meio de uma plataforma robusta, confiável e escalável, fornecendo suporte técnico, ferramentas e boas práticas que capacitam as equipes a atingirem seus objetivos de negócio com qualidade e agilidade.
+Foco em impulsionar inovação, excelência técnica e eficiência operacional, garantindo segurança, estabilidade e alta performance da plataforma de desenvolvimento.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Enabling Team, SCRUM, C4, EDA, DDD, Azure DevOps,  ASP.NET Core 8,  Kubernetes (AKS), Docker, OpenTelemetry
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
+          /*{
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
-            width: 16,
+            width: 16, 
             height: 9,
-          },
+          },*/
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Dell, Cogna, Warren, Trinca, Way2 ...",
+        timeframe: "2008 - 2024",
+        role: "Arquiteto e Engenheiro de Software",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <a target="_blank" href="https://www.linkedin.com/in/lucasfogliarini/#experience">Experiência profissional no LinkedIn</a>
         ],
-        images: [],
-      },
+        images: []
+      }
     ],
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Estudos",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+        name: "Unisinos",
+        description: <>Gestão de Tecnologia da Informação</>,
+      }
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Habilidades técnicas",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Arquitetura de Software",
+        description: <>Planejamento e implementação de arquiteturas escaláveis, incluindo microsserviços, mensageria e integração com sistemas distribuídos.</>,
+        images: [],
+      },
+      {
+        title: "Domain-Driven Design (DDD)",
+        description: <>Modelagem de domínios complexos utilizando DDD, Event Sourcing e Event Storming para alinhar negócio e tecnologia.</>,
+        images: [],
+      },
+      {
+        title: "ASP.NET Core",
+        description: <>Desenvolvimento de APIs e aplicações robustas com ASP.NET Core 8, aplicando boas práticas de arquitetura e engenharia de software.</>,
+        images: [],
+      },
+      {
+        title: "Docker & Azure",
+        description: <>Containerização com Docker e deploy de aplicações em Azure Container Apps, Functions e Kubernetes.</>,
+        images: [],
+      },
+      {
+        title: "Mensageria",
+        description: <>Integração e processamento assíncrono de eventos com Apache Kafka, Service Bus e RabbitMQ.</>,
+        images: [],
+      },
+      {
+        title: "OpenTelemetry",
+        description: <>Monitoramento e rastreamento distribuído de aplicações utilizando OpenTelemetry e Dynatrace.</>,
+        images: [],
+      },
+      {
+        title: "React",
+        description: <>Criação de interfaces dinâmicas e performáticas utilizando React e seu ecossistema.</>,
+        images: [],
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        description: <>Desenvolvimento de aplicações modernas com Next.js, explorando SSR, SSG e integração com APIs.</>,
+        images: [],
+      },
+      {
+        title: "Angular",
+        description: <>Desenvolvimento de interfaces modernas e responsivas com Angular.</>,
+        images: [],
       },
     ],
-  },
+  }
 };
 
 const blog = {
   path: "/blog",
-  label: "Blog",
+  label: "Agenda",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
@@ -207,8 +213,8 @@ const blog = {
 
 const work = {
   path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
+  label: "Projetos",
+  title: `Projetos – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
