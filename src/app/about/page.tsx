@@ -16,6 +16,7 @@ import { baseURL, about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
+import Link from "next/link";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -91,7 +92,7 @@ export default function About() {
           >
             <Avatar src={person.avatar} size="xl" />
             <Flex gap="8" vertical="center">
-              <Icon onBackground="accent-weak" name="globe" />
+              <Icon name="globe" />
               {person.location}
             </Flex>
             {person.languages.length > 0 && (
@@ -129,7 +130,11 @@ export default function About() {
                 vertical="center"
               >
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Flex paddingX="8">Agende uma conversa</Flex>
+                <Flex paddingX="8">
+                  <Link href={about.calendar.link} target="_blank">
+                    Agende uma conversa
+                  </Link>
+                </Flex>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"

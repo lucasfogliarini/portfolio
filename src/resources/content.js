@@ -84,7 +84,7 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://wa.me/51992364249?text=Bora?!",
+    link: "https://wa.me/5551992364249?text=Bora?!",
   },
   intro: {
     display: true,
