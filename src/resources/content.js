@@ -7,6 +7,8 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Arquiteto e Engenheiro de Software",
+  headline : "Conectando negócios e tecnologia com qualidade",
+  subline: "Especialista em arquitetura e engenharia de software, conduzindo times e projetos do conceito à produção, com foco em soluções escaláveis, arquitetura robusta, qualidade, inovação e valor para o negócio.",
   avatar: "/images/avatar.jpg",
   email: "lucasfogliarini@gmail.com",
   locationTimeZone: "America/Sao_Paulo",// Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -57,15 +59,15 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfólio apresentando meu trabalho como ${person.role}`,
-  headline: <>Conectando negócios e tecnologia com código de qualidade</>,
+  headline: <>{person.headline}</>,
   featured: {
     display: true,
-    title: <>Projeto atual: <strong className="ml-4">Bora Encontros</strong></>,
-    href: "/work/bora-encontros",
+    title: <>Projeto atual: <strong className="ml-4">Plataforma Bem Promotora</strong></>,
+    href: "/work/bem-promotora",
   },
   subline: (
     <>
-      Eu sou o Lucas, Arquiteto e Engenheiro de Software atuando profissionalmente na Bem Promotora, especializado em criar soluções escaláveis, arquiteturas robustas e experiências digitais de alto impacto.
+      {person.subline}
     </>
   ),
 };
@@ -93,7 +95,7 @@ const about = {
       <>
         Olá! Sou Lucas Fogliarini, atualmente trabalho como Arquiteto e Engenheiro de Software, com mais de 15 anos de experiência em tecnologia.
         <br /><br />
-        Ao longo da minha trajetória, atuei em projetos desafiadores e de alto impacto, assumindo funções como Engenheiro, Líder Técnico e atualmente como Arquiteto de Software. Essa vivência me proporcionou uma visão sólida e prática sobre desenvolvimento de sistemas escaláveis, arquitetura moderna e entrega de soluções com qualidade e valor real para o negócio.
+        Ao longo da minha trajetória, atuei em projetos desafiadores e de alto impacto, assumindo funções como Engenheiro, Líder Técnico e como Arquiteto de Software. Essa vivência me proporcionou uma visão sólida e prática sobre desenvolvimento de sistemas escaláveis, arquitetura moderna e entrega de soluções com qualidade e valor real para o negócio.
         <br /><br />
         Já contribui com iniciativas estratégicas, táticas e operacionais em empresas como Bem Promotora (empréstimo consignado), Dell Digital Finance, Cogna PTC, PrismaGD, Argo Protector, Warren, entre outras. Cada projeto ampliou minha bagagem técnica e minha capacidade de atuar em contextos complexos e colaborativos.
         <br /><br />
@@ -129,7 +131,7 @@ Foco em impulsionar inovação, excelência técnica e eficiência operacional, 
         ],
       },
       {
-        company: "Dell, Cogna, Warren, Trinca, Way2 ...",
+        company: "Dell, Cogna, Warren, Trinca, ...",
         timeframe: "2008 - 2024",
         role: "Arquiteto e Engenheiro de Software",
         achievements: [
