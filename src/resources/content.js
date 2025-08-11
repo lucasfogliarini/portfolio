@@ -131,8 +131,50 @@ Foco em impulsionar inovação, excelência técnica e eficiência operacional, 
         ],
       },
       {
-        company: "Dell, Cogna, Warren, Trinca, ...",
-        timeframe: "2008 - 2024",
+        company: "Cogna",
+        timeframe: "2022 - 2024",
+        role: "Arquiteto de Software",
+        achievements: [
+          <>
+            Liderança Técnica, arquitetura, publicações, desenvolvimento e monitoramento de serviços na Azure Cloud para o projeto Athenas no Cogna PTC.
+          </>,
+          <>
+            SAFe, SCRUM, Event Storming, EDA, BDD, Azure AD, Azure Service Bus, Azure Function(NET Core 6), Azure DevOps, App Insights,  C#, Dynamics/Power Apps, Azure Web App, Kafka, RabbitMQ.
+          </>
+        ],
+        images: []
+      },
+      {
+        company: "Way2",
+        timeframe: "2021 - 2022",
+        role: "Arquiteto de Software",
+        achievements: [
+          <>
+            Análise, desenvolvimento e arquitetura do PrismaGD, um software de geração distribuída de energia solar para monitorar, controlar e otimizar a produção de energia a partir de múltiplos sistemas de energia solar distribuídos em uma rede.
+          </>,
+          <>
+            SCRUM, microsserviços,  ASP.NET Core 5, C#, EF Core 5,  Service Bus, Functions, Kubernetes, Azure, MSSQL Server, GraphQL, code review.
+          </>
+        ],
+        images: []
+      },
+      {
+        company: "Dell",
+        timeframe: "2018 - 2021",
+        role: "Engenheiro de Software",
+        achievements: [
+          <>
+            Análise, desenvolvimento, arquitetura de soluções para o Dell Latam Finance IT.
+          </>,
+          <>
+            SCRUM, TDD, PCF Apps e Jobs, ASP.NET Core, C#, EF Core e EF6, microserviços, gitlab, Oracle,  Angular 8
+          </>
+        ],
+        images: []
+      },
+      {
+        company: "Warren, Trinca, ...",
+        timeframe: "2008 - 2018",
         role: "Arquiteto e Engenheiro de Software",
         achievements: [
           <>
