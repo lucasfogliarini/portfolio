@@ -95,7 +95,7 @@ const about = {
       <>
         Olá! Sou Lucas Fogliarini, atualmente trabalho como Arquiteto e Engenheiro de Software, com mais de 15 anos de experiência em tecnologia.
         <br /><br />
-        Ao longo da minha trajetória, atuei em projetos desafiadores e de alto impacto, assumindo funções como Engenheiro, Líder Técnico e como Arquiteto de Software. Essa vivência me proporcionou uma visão sólida e prática sobre desenvolvimento de sistemas escaláveis, arquitetura moderna e entrega de soluções com qualidade e valor real para o negócio.
+        Ao longo da minha trajetória, atuei em projetos desafiadores e de alto impacto, assumindo funções como Engenheiro, Líder Técnico e Arquiteto de Software. Essa vivência me proporcionou uma visão sólida e prática sobre desenvolvimento de sistemas escaláveis, arquitetura moderna e entrega de soluções com qualidade e valor real para o negócio.
         <br /><br />
         Já contribui com iniciativas estratégicas, táticas e operacionais em empresas como Bem Promotora (empréstimo consignado), Dell Digital Finance, Cogna PTC, PrismaGD, Argo Protector, Warren, entre outras. Cada projeto ampliou minha bagagem técnica e minha capacidade de atuar em contextos complexos e colaborativos.
         <br /><br />
@@ -155,7 +155,7 @@ Foco em impulsionar inovação, excelência técnica e eficiência operacional, 
   },
   technical: {
     display: true,
-    title: "Habilidades técnicas",
+    title: "Competências",
     skills: [
       {
         title: "Arquitetura de Software",
@@ -200,6 +200,11 @@ Foco em impulsionar inovação, excelência técnica e eficiência operacional, 
       {
         title: "Angular",
         description: <>Desenvolvimento de interfaces modernas e responsivas com Angular.</>,
+        images: [],
+      },
+      {
+        title: "Todas Competências",
+        description: <><a target="_blank" href="https://github.com/lucasfogliarini/lucasfogliarini/blob/main/Tecnologista.md">Todas competências no github</a></>,
         images: [],
       },
     ],
