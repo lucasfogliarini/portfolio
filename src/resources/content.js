@@ -55,10 +55,10 @@ const social = [
 
 const home = {
   path: "/",
-  image: "/images/og/home.jpg",
+  image: "/images/og/bora.png",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfólio apresentando meu trabalho como ${person.role}`,
+  title: `${person.name}, ${person.headline}`,
+  description: `${person.subline}`,
   headline: <>{person.headline}</>,
   featured: {
     display: true,
