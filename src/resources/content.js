@@ -264,14 +264,15 @@ const work = {
 
 const events = {
   path: "/events",
-  label: "Agenda",
+  label: "Encontros",
   title: "PUC Angels",
-  description: `Inovando e melhorando o mundo todo. A PUC angels nasceu para melhorar o mundo por meio da democratização da educação e o combate à fome.`,  
+  subtitle: "Inovando e melhorando o mundo todo",
+  description: `A PUC angels nasceu para melhorar o mundo por meio da democratização da educação e o combate à fome.`,  
 };
 
 const blog = {
   path: "/blog",
-  label: "Agenda",
+  label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts

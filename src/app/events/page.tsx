@@ -27,18 +27,26 @@ export default function Blog() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Heading marginBottom="l" variant="display-strong-s">
-        {events.title}
-      </Heading>
+      <h1>{events.title}</h1>
+      <br />
+      <h4>{events.subtitle}</h4>
+      <br />
       <p>{events.description}</p>
       <br />
+      <Button
+            id="pucangels"
+            data-border="rounded"
+            variant="secondary"
+            href="https://pucangels.org"
+            size="m"
+          >Saiba mais</Button>
       <Button
             id="luma"
             data-border="rounded"
             href="https://lu.ma/pucangels"
             size="m"
             arrowIcon
-          >Assine essa agenda de encontros</Button>
+          >Assine essa agenda de encontros</Button>      
       <br />
       <iframe
         src="https://lu.ma/embed/calendar/cal-2i5btBJikkBupNV/events"
