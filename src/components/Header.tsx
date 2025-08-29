@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import { Fade, Flex, Line, ToggleButton } from "@once-ui-system/core";
 
-import { routes, display, person, about, blog, work, gallery } from "@/resources";
+import { routes, display, person, about, blog, work, gallery, events } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
 
@@ -14,7 +14,7 @@ type TimeDisplayProps = {
   locale?: string; // Optionally allow locale, defaulting to 'en-GB'
 };
 
-const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" }) => {
+const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "pt-BR" }) => {
   const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
@@ -109,6 +109,23 @@ export const Header = () => {
                     prefixIcon="grid"
                     href="/work"
                     selected={pathname.startsWith("/work")}
+                  />
+                </>
+              )}
+              {routes["/events"] && (
+                <>
+                  <ToggleButton
+                    className="s-flex-hide"
+                    prefixIcon="calendar"
+                    href="/events"
+                    label={events.label}
+                    selected={pathname.startsWith("/events")}
+                  />
+                  <ToggleButton
+                    className="s-flex-show"
+                    prefixIcon="calendar"
+                    href="/events"
+                    selected={pathname.startsWith("/events")}
                   />
                 </>
               )}

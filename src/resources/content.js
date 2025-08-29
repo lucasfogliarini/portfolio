@@ -253,6 +253,22 @@ Foco em impulsionar inovação, excelência técnica e eficiência operacional, 
   }
 };
 
+const work = {
+  path: "/work",
+  label: "Projetos",
+  title: `Projetos – ${person.name}`,
+  description: `Design and dev projects by ${person.name}`,
+  // Create new project pages by adding a new .mdx file to app/blog/posts
+  // All projects will be listed on the /home and /work routes
+};
+
+const events = {
+  path: "/events",
+  label: "Agenda",
+  title: "PUC Angels",
+  description: `Inovando e melhorando o mundo todo. A PUC angels nasceu para melhorar o mundo por meio da democratização da educação e o combate à fome.`,  
+};
+
 const blog = {
   path: "/blog",
   label: "Agenda",
@@ -262,14 +278,6 @@ const blog = {
   // All posts will be listed on the /blog route
 };
 
-const work = {
-  path: "/work",
-  label: "Projetos",
-  title: `Projetos – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
-};
 
 const gallery = {
   path: "/gallery",
@@ -322,4 +330,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, events, gallery };
