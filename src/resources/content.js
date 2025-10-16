@@ -7,8 +7,8 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Arquiteto e Engenheiro de Software",
-  headline : "Conectando negócios e tecnologia com qualidade",
-  subline: "Especialista em arquitetura e engenharia de software, conduzindo times e projetos do conceito à produção, com foco em soluções escaláveis, arquitetura robusta, qualidade, inovação e valor para o negócio.",
+  headline : "Conectando negócios e tecnologia com propósito e excelência.",
+  subline: "Especialista em arquitetura e engenharia de software, conduzindo times e projetos do conceito à produção. Atuo na criação de soluções escaláveis e robustas, com foco em inovação, excelência técnica e geração de valor para o negócio.",
   avatar: "/images/avatar.jpg",
   email: "lucasfogliarini@gmail.com",
   locationTimeZone: "America/Sao_Paulo",// Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
