@@ -28,11 +28,18 @@ export const RepositoryCard: React.FC<RepositoryCardProps> = ({ repo }) => {
                     <Heading as="h3" wrap="balance">
                         {repo.name}
                     </Heading>
-                    {repo.language && (
-                        <Tag variant="neutral" size="s">
-                            {repo.language}
-                        </Tag>
-                    )}
+                    <Flex gap="8" wrap>
+                        {repo.language && (
+                            <Tag variant="neutral" size="s">
+                                {repo.language}
+                            </Tag>
+                        )}
+                        {repo.topics.map((topic) => (
+                            <Tag key={topic} variant="neutral" size="s">
+                                {topic}
+                            </Tag>
+                        ))}
+                    </Flex>
                 </Flex>
 
                 <Column flex={7} gap="16">

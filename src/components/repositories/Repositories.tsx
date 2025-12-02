@@ -8,19 +8,10 @@ interface RepositoriesProps {
 }
 
 export async function Repositories({ range, username = "lucasfogliarini" }: RepositoriesProps) {
-    const allRepos = await getGitHubRepos(username);
-
-    const sortedRepos = allRepos.sort((a, b) => {
-        return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
-    });
-
-    const displayedRepos = range
-        ? sortedRepos.slice(range[0] - 1, range[1] ?? sortedRepos.length)
-        : sortedRepos;
-
+    const topRepos = await getGitHubRepos(username);
     return (
         <Column fillWidth gap="xl" marginBottom="40" paddingX="l">
-            {displayedRepos.map((repo) => (
+            {topRepos.map((repo) => (
                 <RepositoryCard key={repo.name} repo={repo} />
             ))}
         </Column>

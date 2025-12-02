@@ -9,6 +9,7 @@ export type GitHubRepo = {
     forks_count: number;
     language: string | null;
     topics: string[];
+    pushed_at: string;
     owner: {
         login: string;
         avatar_url: string;
@@ -18,7 +19,7 @@ export type GitHubRepo = {
 export async function getGitHubRepos(username: string = "lucasfogliarini"): Promise<GitHubRepo[]> {
     try {
         const response = await fetch(
-            `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`,
+            `https://api.github.com/users/${username}/repos?per_page=10&sort=pushed`,
             {
                 next: { revalidate: 3600 } // Cache por 1 hora
             }
@@ -43,6 +44,7 @@ export async function getGitHubRepos(username: string = "lucasfogliarini"): Prom
                 forks_count: repo.forks_count,
                 language: repo.language,
                 topics: repo.topics || [],
+                pushed_at: repo.pushed_at,
                 owner: {
                     login: repo.owner.login,
                     avatar_url: repo.owner.avatar_url,
