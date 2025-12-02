@@ -10,7 +10,7 @@ import {
     Tag,
 } from "@once-ui-system/core";
 
-import type { GitHubRepo } from "./github";
+import type { GitHubRepo } from "@/utils/github";
 
 interface RepositoryCardProps {
     repo: GitHubRepo;

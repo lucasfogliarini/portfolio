@@ -29,6 +29,8 @@ export async function Projects({ range, username = "lucasfogliarini" }: Projects
           avatars={[{ src: repo.owner.avatar_url }]}
           site={repo.homepage || ""}
           github={repo.html_url}
+          language={repo.language}
+          topics={repo.topics}
         />
       ))}
     </Column>
