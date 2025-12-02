@@ -76,11 +76,16 @@ export default async function Project({
       </Column>
 
       <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
-        <Flex gap="12" marginBottom="24" vertical="center">
+        <Flex gap="12" marginBottom="24" vertical="center" wrap>
           <AvatarGroup reverse avatars={avatars} size="m" />
-          <Text variant="body-default-s" onBackground="neutral-weak">
-            {formatDate(repo.pushed_at)}
-          </Text>
+          <Flex direction="column" gap="4">
+            <Text variant="body-default-xs" onBackground="neutral-weak">
+              Atualizado em {formatDate(repo.pushed_at, false)}
+            </Text>
+            <Text variant="body-default-xs" onBackground="neutral-weak">
+              Criado em {formatDate(repo.created_at, false)}
+            </Text>
+          </Flex>
         </Flex>
         {readmeContent ? (
           <CustomMDX source={readmeContent} />
