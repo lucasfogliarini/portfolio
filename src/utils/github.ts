@@ -10,20 +10,16 @@ export type GitHubRepo = {
     language: string | null;
     topics: string[];
     pushed_at: string;
+    has_projects: boolean;
     owner: {
         login: string;
         avatar_url: string;
     };
 };
 
-export async function getGitHubRepos(username: string = "lucasfogliarini"): Promise<GitHubRepo[]> {
+export async function getGitHubRepos(username: string = "lucasfogliarini", per_page: number = 100, sort: string = 'updated'): Promise<GitHubRepo[]> {
     try {
-        const response = await fetch(
-            `https://api.github.com/users/${username}/repos?per_page=10&sort=pushed`,
-            {
-                next: { revalidate: 3600 } // Cache por 1 hora
-            }
-        );
+        const response = await fetch(`https://api.github.com/users/${username}/repos?per_page=${per_page}&sort=${sort}`);
 
         if (!response.ok) {
             throw new Error(`GitHub API error: ${response.status}`);
@@ -45,6 +41,7 @@ export async function getGitHubRepos(username: string = "lucasfogliarini"): Prom
                 language: repo.language,
                 topics: repo.topics || [],
                 pushed_at: repo.pushed_at,
+                has_projects: repo.has_projects,
                 owner: {
                     login: repo.owner.login,
                     avatar_url: repo.owner.avatar_url,
@@ -53,5 +50,29 @@ export async function getGitHubRepos(username: string = "lucasfogliarini"): Prom
     } catch (error) {
         console.error("Error fetching GitHub repos:", error);
         return [];
+    }
+}
+
+export async function getRepoReadme(username: string, repo: string): Promise<string | null> {
+    try {
+        const response = await fetch(
+            `https://api.github.com/repos/${username}/${repo}/readme`,
+            {
+                headers: {
+                    Accept: "application/vnd.github.v3.raw", // Request Raw Markdown format
+                },
+                next: { revalidate: 3600 }
+            }
+        );
+
+        if (!response.ok) {
+            if (response.status === 404) return null;
+            throw new Error(`GitHub API error: ${response.status}`);
+        }
+
+        return await response.text();
+    } catch (error) {
+        console.error("Error fetching repo README:", error);
+        return null;
     }
 }
