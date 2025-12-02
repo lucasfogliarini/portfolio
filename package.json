@@ -2,7 +2,7 @@
   "name": "@once-ui-system/magic-portfolio",
   "version": "2.2.0",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=18 <=20"
   },
   "scripts": {
     "dev": "next dev",
