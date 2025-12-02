@@ -43,13 +43,13 @@ export default function Blog() {
       <Button
             id="luma"
             data-border="rounded"
-            href="https://lu.ma/pucangels"
+            href="https://lu.ma/bora"
             size="m"
             arrowIcon
           >Assine essa agenda de encontros</Button>      
       <br />
       <iframe
-        src="https://lu.ma/embed/calendar/cal-2i5btBJikkBupNV/events"
+        src="https://lu.ma/embed/calendar/cal-GL6rhFY3X6D1PY6/events"
         width="600"
         height="450"
         style={{ border: "1px solid #bfcbda88", borderRadius: "4px" }}
