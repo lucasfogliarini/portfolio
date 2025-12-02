@@ -1,4 +1,4 @@
-import { getPosts } from "@/utils/utils";
+import { getGitHubRepos } from "@/app/work/github";
 import { Column } from "@once-ui-system/core";
 import { ProjectCard } from "@/components";
 
@@ -6,8 +6,9 @@ interface ProjectsProps {
   range?: [number, number?];
 }
 
-export function Projects({ range }: ProjectsProps) {
-  let allProjects = getPosts(["src", "app", "work", "projects"]);
+export async function Projects({ range }: ProjectsProps) {
+  let allProjects = await getGitHubRepos("lucasfogliarini");
+
 
   const sortedProjects = allProjects.sort((a, b) => {
     return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();
