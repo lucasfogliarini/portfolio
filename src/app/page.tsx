@@ -3,6 +3,7 @@ import React from "react";
 import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Meta, Schema } from "@once-ui-system/core";
 import { home, about, person, newsletter, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
+import { Projects } from "@/components/projects/Projects";
 import { Repositories } from "@/components/repositories/Repositories";
 
 export default function Home() {
@@ -67,10 +68,16 @@ export default function Home() {
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
-        <Heading as="h2" wrap="balance">
-          Repositórios
-        </Heading>
-        <Repositories range={[1, 4]} />
+        <Column fillWidth gap="l">
+          <Heading as="h2" wrap="balance">
+            Projetos
+          </Heading>
+          <Projects range={[1, 3]} />
+          <Heading as="h2" wrap="balance">
+            Repositórios
+          </Heading>
+          <Repositories range={[1, 4]} />
+        </Column>
       </RevealFx>
     </Column>
   );

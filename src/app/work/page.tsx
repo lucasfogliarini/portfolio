@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Column, Heading, Meta, Schema } from "@once-ui-system/core";
 import { baseURL, about, person, work } from "@/resources";
+import { Projects } from "@/components/projects/Projects";
 import { Repositories } from "@/components/repositories/Repositories";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -29,7 +30,13 @@ export default function Work() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Heading as="h1" wrap="balance">
+      <Heading wrap="balance">
+        Projetos
+      </Heading>
+      <br />
+      <Projects />
+      <br />
+      <Heading wrap="balance">
         Repositórios
       </Heading>
       <br />
