@@ -34,19 +34,19 @@ export default function Blog() {
       <p>{events.description}</p>
       <br />
       <Button
-            id="pucangels"
-            data-border="rounded"
-            variant="secondary"
-            href="https://pucangels.org"
-            size="m"
-          >Saiba mais</Button>
+        id="bora"
+        data-border="rounded"
+        variant="secondary"
+        href="https://bora.host"
+        size="m"
+      >Visite o site</Button>
       <Button
-            id="luma"
-            data-border="rounded"
-            href="https://lu.ma/bora"
-            size="m"
-            arrowIcon
-          >Assine essa agenda de encontros</Button>      
+        id="luma"
+        data-border="rounded"
+        href="https://lu.ma/bora"
+        size="m"
+        arrowIcon
+      >Assine a agenda do Bora</Button>
       <br />
       <iframe
         src="https://lu.ma/embed/calendar/cal-GL6rhFY3X6D1PY6/events"

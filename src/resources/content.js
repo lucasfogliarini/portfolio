@@ -263,9 +263,9 @@ const work = {
 const events = {
   path: "/events",
   label: "Encontros",
-  title: "PUC Angels",
-  subtitle: "Inovando e melhorando o mundo todo",
-  description: `A PUC angels nasceu para melhorar o mundo por meio da democratização da educação e o combate à fome.`,
+  title: "Bora",
+  subtitle: "Conectando pessoas com propósito para inovar, educar e transformar o mundo em parceria com a Igreja Brasa e o PUC Angels.",
+  description: ''//`Conectando pessoas com propósito para inovar, educar e transformar o mundo em parceria com a rede PUC Angels.`,
 };
 
 const blog = {

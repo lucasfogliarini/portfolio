@@ -60,8 +60,7 @@ export async function getRepoReadme(username: string, repo: string): Promise<str
             {
                 headers: {
                     Accept: "application/vnd.github.v3.raw", // Request Raw Markdown format
-                },
-                next: { revalidate: 3600 }
+                }
             }
         );
 
