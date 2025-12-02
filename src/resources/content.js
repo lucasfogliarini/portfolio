@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Arquiteto e Engenheiro de Software",
-  headline : "Conectando negócios e tecnologia com propósito e excelência.",
+  headline: "Conectando negócios e tecnologia com propósito e excelência.",
   subline: "Especialista em arquitetura e engenharia de software, conduzindo times e projetos do conceito à produção. Atuo na criação de soluções escaláveis e robustas, com foco em inovação, excelência técnica e geração de valor para o negócio.",
   avatar: "/images/avatar.jpg",
   email: "lucasfogliarini@gmail.com",
@@ -114,7 +114,7 @@ const about = {
         achievements: [
           <>
             Responsável por promover o desenvolvimento eficiente de software na Bem Promotora por meio de uma plataforma robusta, confiável e escalável, fornecendo suporte técnico, ferramentas e boas práticas que capacitam as equipes a atingirem seus objetivos de negócio com qualidade e agilidade.
-Foco em impulsionar inovação, excelência técnica e eficiência operacional, garantindo segurança, estabilidade e alta performance da plataforma de desenvolvimento.
+            Foco em impulsionar inovação, excelência técnica e eficiência operacional, garantindo segurança, estabilidade e alta performance da plataforma de desenvolvimento.
           </>,
           <>
             Enabling Team, SCRUM, C4, EDA, DDD, Azure DevOps,  ASP.NET Core 8,  Kubernetes (AKS), Docker, OpenTelemetry
@@ -257,9 +257,7 @@ const work = {
   path: "/work",
   label: "Projetos",
   title: `Projetos – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/work/projects
-  // All projects will be listed on the /home and /work routes
+  description: `Projetos de ${person.name}`,
 };
 
 const events = {
@@ -267,7 +265,7 @@ const events = {
   label: "Encontros",
   title: "PUC Angels",
   subtitle: "Inovando e melhorando o mundo todo",
-  description: `A PUC angels nasceu para melhorar o mundo por meio da democratização da educação e o combate à fome.`,  
+  description: `A PUC angels nasceu para melhorar o mundo por meio da democratização da educação e o combate à fome.`,
 };
 
 const blog = {
