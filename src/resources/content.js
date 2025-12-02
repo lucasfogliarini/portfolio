@@ -62,8 +62,8 @@ const home = {
   headline: <>{person.headline}</>,
   featured: {
     display: true,
-    title: <>Projeto atual: <strong className="ml-4">Plataforma Bem Promotora</strong></>,
-    href: "/work/bem-promotora",
+    title: <>Projeto atual: <strong className="ml-4">Banco Carrefour</strong></>,
+    href: "/work/banco-carrefour",
   },
   subline: (
     <>
