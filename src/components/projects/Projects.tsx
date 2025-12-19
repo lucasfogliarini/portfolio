@@ -9,7 +9,7 @@ interface ProjectsProps {
 
 export async function Projects({ range, username = "lucasfogliarini" }: ProjectsProps) {
   const allRepos = await getGitHubRepos(username, 100);
-  const projects = allRepos.filter(repo => repo.topics.includes("project-portfolio"));
+  const projects = allRepos.filter(repo => repo.topics.includes("bora"));
   console.log(allRepos);
   const displayedProjects = range
     ? projects.slice(range[0] - 1, range[1] ?? projects.length)
