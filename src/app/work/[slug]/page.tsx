@@ -8,7 +8,7 @@ import { Metadata } from "next";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const repos = await getGitHubRepos();
-  return repos.filter(repo => repo.topics.includes("project-portfolio")).map((repo) => ({
+  return repos.filter(repo => repo.topics.includes("bora")).map((repo) => ({
     slug: repo.name,
   }));
 }

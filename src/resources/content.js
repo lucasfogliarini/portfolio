@@ -255,17 +255,17 @@ const about = {
 
 const work = {
   path: "/work",
-  label: "Projetos",
-  title: `Projetos – ${person.name}`,
+  label: "Bora?!",
+  title: `Bora? – ${person.name}`,
   description: `Projetos de ${person.name}`,
 };
 
 const events = {
   path: "/events",
   label: "Encontros",
-  title: "Bora",
-  subtitle: "Conectando pessoas com propósito para inovar, educar e transformar o mundo em parceria com a Igreja Brasa e o PUC Angels.",
-  description: ''//`Conectando pessoas com propósito para inovar, educar e transformar o mundo em parceria com a rede PUC Angels.`,
+  title: "Bora Encontros",
+  subtitle: "Conectamos pessoas, famílias e construtores para viabilizar moradias autossustentáveis e responsáveis.",
+  description: '',
 };
 
 const blog = {
